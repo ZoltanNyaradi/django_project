@@ -20,7 +20,7 @@ from hello_world import views as index_views
 from about import views as about_view
 
 urlpatterns = [
-    path("about", about_view.about, name="about"),
+    path("about/", about_view.about, name="about"),
     path("hello/", index_views.index, name="index"),
     path('admin/', admin.site.urls),
 ]
